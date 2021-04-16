@@ -1,12 +1,17 @@
 import React from 'react';
 import Menu from '../Menu';
+import Footer from '../Footer';
 
 
-function PageDefault() {
+function PageDefault({children}) {
   return(
-    <Menu />
+    <div>
 
-    <Footer />
+      <Menu />
+          {children}
+      <Footer />
+
+    </div>
   );
 }
 
